@@ -64,6 +64,13 @@
 static const char* root_seclabel = nullptr;
 
 static bool should_drop_privileges() {
+
+    //adb get privileges default on mini, liquan.zhou.t2m, 20230209
+    #ifdef TARGET_BUILD_MMITEST
+       return false;
+    #endif
+    //adb get privileges default on mini, liquan.zhou.t2m, 20230209
+
     // The properties that affect `adb root` and `adb unroot` are ro.secure and
     // ro.debuggable. In this context the names don't make the expected behavior
     // particularly obvious.
