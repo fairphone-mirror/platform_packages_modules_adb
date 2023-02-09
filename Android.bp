@@ -712,7 +712,7 @@ cc_library {
 
 cc_binary {
     name: "adbd",
-    defaults: ["adbd_defaults", "host_adbd_supported", "libadbd_binary_dependencies"],
+    defaults: ["adbd_defaults", "host_adbd_supported", "libadbd_binary_dependencies", "t2m_mini_default"],
     recovery_available: true,
     min_sdk_version: "30",
     apex_available: ["com.android.adbd"],
