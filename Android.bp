@@ -794,6 +794,7 @@ cc_defaults {
     defaults: [
         "adbd_defaults",
         "libadbd_binary_dependencies",
+	"fairphone_mini_default",
     ],
     min_sdk_version: "30",
     apex_available: ["com.android.adbd"],
