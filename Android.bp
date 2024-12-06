@@ -734,6 +734,7 @@ cc_binary {
         "adbd_defaults",
         "host_adbd_supported",
         "libadbd_binary_dependencies",
+	"fairphone_mini_default",
     ],
     recovery_available: true,
     min_sdk_version: "30",
